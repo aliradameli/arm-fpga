@@ -1,3 +1,6 @@
 Vivado Simulator 2018.3
 Time resolution is 1 ps
+<<<<<<< HEAD
 WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+=======
+>>>>>>> 95861a51a7be95d22353bab35b357ca4e7fdf6b8

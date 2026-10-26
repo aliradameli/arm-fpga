@@ -44,6 +44,7 @@
 #endif
 typedef void (*funcp)(char *, char *);
 extern int main(int, char**);
+<<<<<<< HEAD
 extern void execute_28(char*, char *);
 extern void execute_29(char*, char *);
 extern void execute_84(char*, char *);
@@ -104,6 +105,43 @@ const int NumRelocateId= 54;
 void relocate(char *dp)
 {
 	iki_relocate(dp, "xsim.dir/ARM_TB_behav/xsim.reloc",  (void **)funcTab, 54);
+=======
+extern void execute_17(char*, char *);
+extern void execute_18(char*, char *);
+extern void execute_40(char*, char *);
+extern void execute_41(char*, char *);
+extern void vlog_const_rhs_process_execute_0_fast_no_reg_no_agg(char*, char*, char*);
+extern void execute_34(char*, char *);
+extern void execute_35(char*, char *);
+extern void execute_36(char*, char *);
+extern void execute_37(char*, char *);
+extern void execute_38(char*, char *);
+extern void execute_39(char*, char *);
+extern void execute_4(char*, char *);
+extern void execute_23(char*, char *);
+extern void execute_24(char*, char *);
+extern void vlog_simple_process_execute_0_fast_no_reg_no_agg(char*, char*, char*);
+extern void execute_26(char*, char *);
+extern void execute_6(char*, char *);
+extern void execute_9(char*, char *);
+extern void execute_12(char*, char *);
+extern void execute_15(char*, char *);
+extern void execute_20(char*, char *);
+extern void execute_21(char*, char *);
+extern void execute_22(char*, char *);
+extern void execute_42(char*, char *);
+extern void execute_43(char*, char *);
+extern void execute_44(char*, char *);
+extern void execute_45(char*, char *);
+extern void execute_46(char*, char *);
+extern void vlog_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
+funcp funcTab[29] = {(funcp)execute_17, (funcp)execute_18, (funcp)execute_40, (funcp)execute_41, (funcp)vlog_const_rhs_process_execute_0_fast_no_reg_no_agg, (funcp)execute_34, (funcp)execute_35, (funcp)execute_36, (funcp)execute_37, (funcp)execute_38, (funcp)execute_39, (funcp)execute_4, (funcp)execute_23, (funcp)execute_24, (funcp)vlog_simple_process_execute_0_fast_no_reg_no_agg, (funcp)execute_26, (funcp)execute_6, (funcp)execute_9, (funcp)execute_12, (funcp)execute_15, (funcp)execute_20, (funcp)execute_21, (funcp)execute_22, (funcp)execute_42, (funcp)execute_43, (funcp)execute_44, (funcp)execute_45, (funcp)execute_46, (funcp)vlog_transfunc_eventcallback};
+const int NumRelocateId= 29;
+
+void relocate(char *dp)
+{
+	iki_relocate(dp, "xsim.dir/ARM_TB_behav/xsim.reloc",  (void **)funcTab, 29);
+>>>>>>> 95861a51a7be95d22353bab35b357ca4e7fdf6b8
 
 	/*Populate the transaction function pointer field in the whole net structure */
 }

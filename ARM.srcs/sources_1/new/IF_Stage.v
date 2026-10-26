@@ -14,6 +14,7 @@ module IF_Stage (
     wire [31:0] PC_Plus_1;
     wire [31:0] Next_PC;
 
+<<<<<<< HEAD
     // 1. Adder: Word-addressable memory increments PC by 1
     assign PC_Plus_1 = PC_Reg + 32'd1;
 
@@ -21,6 +22,15 @@ module IF_Stage (
     assign Next_PC = Branch_taken ? BranchAddr : PC_Plus_1;
 
     // 3. PC Register: Resets to 0 on rst, holds value if freeze is 1
+=======
+    // Adder: PC + 1
+    assign PC_Plus_1 = PC_Reg + 32'd1;
+
+    // MUX: Choose between PC+1 and BranchAddr
+    assign Next_PC = Branch_taken ? BranchAddr : PC_Plus_1;
+
+    // PC Register
+>>>>>>> 95861a51a7be95d22353bab35b357ca4e7fdf6b8
     always @(posedge clk or posedge rst) begin
         if (rst)
             PC_Reg <= 32'd0;
@@ -28,6 +38,7 @@ module IF_Stage (
             PC_Reg <= Next_PC;
     end
 
+<<<<<<< HEAD
     // Output PC to next stage (tapped after the +1 adder per schematic)
     assign PC = PC_Plus_1;
 
@@ -37,6 +48,13 @@ module IF_Stage (
         .a(PC_Reg[10:0]),      // input wire [10 : 0] a
         .spo(Instruction)      // output wire [31 : 0] spo
     );
+=======
+    // Output PC (PC + 1 per manual schematic)
+    assign PC = PC_Plus_1;
+
+    // DUMMY Instruction output (We will replace this with IP Core in the next phase)
+    assign Instruction = {16'hAAAA, PC_Reg[15:0]};
+>>>>>>> 95861a51a7be95d22353bab35b357ca4e7fdf6b8
 
 endmodule
 
