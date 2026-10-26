@@ -1,0 +1,12 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/A_University/CA_lab/ARM/ARM.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/A_University/CA_lab/ARM/ARM.srcs/sources_1/new/ARM.v,1792995977,verilog,,D:/A_University/CA_lab/ARM/ARM.srcs/sources_1/new/EXE_Stage.v,,ARM,,,,,,,,
+D:/A_University/CA_lab/ARM/ARM.srcs/sources_1/new/ARM_TB.v,1792996063,verilog,,,,ARM_TB,,,,,,,,
+D:/A_University/CA_lab/ARM/ARM.srcs/sources_1/new/EXE_Stage.v,1792995950,verilog,,D:/A_University/CA_lab/ARM/ARM.srcs/sources_1/new/ID_Stage.v,,EXE_Stage;EXE_Stage_Reg,,,,,,,,
+D:/A_University/CA_lab/ARM/ARM.srcs/sources_1/new/ID_Stage.v,1792995943,verilog,,D:/A_University/CA_lab/ARM/ARM.srcs/sources_1/new/IF_Stage.v,,ID_Stage;ID_Stage_Reg,,,,,,,,
+D:/A_University/CA_lab/ARM/ARM.srcs/sources_1/new/IF_Stage.v,1792995933,verilog,,D:/A_University/CA_lab/ARM/ARM.srcs/sources_1/new/MEM_Stage.v,,IF_Stage;IF_Stage_Reg,,,,,,,,
+D:/A_University/CA_lab/ARM/ARM.srcs/sources_1/new/MEM_Stage.v,1792995960,verilog,,D:/A_University/CA_lab/ARM/ARM.srcs/sources_1/new/WB_Stage.v,,MEM_Stage;MEM_Stage_Reg,,,,,,,,
+D:/A_University/CA_lab/ARM/ARM.srcs/sources_1/new/WB_Stage.v,1792995967,verilog,,D:/A_University/CA_lab/ARM/ARM.srcs/sources_1/new/ARM_TB.v,,WB_Stage,,,,,,,,

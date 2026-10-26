@@ -1,0 +1,64 @@
+`timescale 1ns / 1ps
+
+module IF_Stage (
+    input clk,
+    input rst,
+    input freeze,
+    input Branch_taken,
+    input [31:0] BranchAddr,
+    output [31:0] PC,
+    output [31:0] Instruction
+);
+
+    reg  [31:0] PC_Reg;
+    wire [31:0] PC_Plus_1;
+    wire [31:0] Next_PC;
+
+    // Adder: PC + 1
+    assign PC_Plus_1 = PC_Reg + 32'd1;
+
+    // MUX: Choose between PC+1 and BranchAddr
+    assign Next_PC = Branch_taken ? BranchAddr : PC_Plus_1;
+
+    // PC Register
+    always @(posedge clk or posedge rst) begin
+        if (rst)
+            PC_Reg <= 32'd0;
+        else if (!freeze)
+            PC_Reg <= Next_PC;
+    end
+
+    // Output PC (PC + 1 per manual schematic)
+    assign PC = PC_Plus_1;
+
+    // DUMMY Instruction output (We will replace this with IP Core in the next phase)
+    assign Instruction = {16'hAAAA, PC_Reg[15:0]};
+
+endmodule
+
+
+module IF_Stage_Reg (
+    input clk,
+    input rst,
+    input freeze,
+    input flush,
+    input [31:0] PC_in,
+    input [31:0] Instruction_in,
+    output reg [31:0] PC,
+    output reg [31:0] Instruction
+);
+
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            PC <= 32'd0;
+            Instruction <= 32'd0;
+        end else if (flush) begin
+            PC <= 32'd0;
+            Instruction <= 32'd0;
+        end else if (!freeze) begin
+            PC <= PC_in;
+            Instruction <= Instruction_in;
+        end
+    end
+
+endmodule
