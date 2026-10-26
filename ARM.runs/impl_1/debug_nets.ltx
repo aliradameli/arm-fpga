@@ -1,0 +1,734 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "50000000"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "ila_inst",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "B65D52E476D5562DB4292AFCA0F6D0A3",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "rst",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "IF_pc",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "IF_pc[31]"
+                                            },
+                                            {
+                                                "name": "IF_pc[30]"
+                                            },
+                                            {
+                                                "name": "IF_pc[29]"
+                                            },
+                                            {
+                                                "name": "IF_pc[28]"
+                                            },
+                                            {
+                                                "name": "IF_pc[27]"
+                                            },
+                                            {
+                                                "name": "IF_pc[26]"
+                                            },
+                                            {
+                                                "name": "IF_pc[25]"
+                                            },
+                                            {
+                                                "name": "IF_pc[24]"
+                                            },
+                                            {
+                                                "name": "IF_pc[23]"
+                                            },
+                                            {
+                                                "name": "IF_pc[22]"
+                                            },
+                                            {
+                                                "name": "IF_pc[21]"
+                                            },
+                                            {
+                                                "name": "IF_pc[20]"
+                                            },
+                                            {
+                                                "name": "IF_pc[19]"
+                                            },
+                                            {
+                                                "name": "IF_pc[18]"
+                                            },
+                                            {
+                                                "name": "IF_pc[17]"
+                                            },
+                                            {
+                                                "name": "IF_pc[16]"
+                                            },
+                                            {
+                                                "name": "IF_pc[15]"
+                                            },
+                                            {
+                                                "name": "IF_pc[14]"
+                                            },
+                                            {
+                                                "name": "IF_pc[13]"
+                                            },
+                                            {
+                                                "name": "IF_pc[12]"
+                                            },
+                                            {
+                                                "name": "IF_pc[11]"
+                                            },
+                                            {
+                                                "name": "IF_pc[10]"
+                                            },
+                                            {
+                                                "name": "IF_pc[9]"
+                                            },
+                                            {
+                                                "name": "IF_pc[8]"
+                                            },
+                                            {
+                                                "name": "IF_pc[7]"
+                                            },
+                                            {
+                                                "name": "IF_pc[6]"
+                                            },
+                                            {
+                                                "name": "IF_pc[5]"
+                                            },
+                                            {
+                                                "name": "IF_pc[4]"
+                                            },
+                                            {
+                                                "name": "IF_pc[3]"
+                                            },
+                                            {
+                                                "name": "IF_pc[2]"
+                                            },
+                                            {
+                                                "name": "IF_pc[1]"
+                                            },
+                                            {
+                                                "name": "IF_pc[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "ID_pc",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "ID_pc[31]"
+                                            },
+                                            {
+                                                "name": "ID_pc[30]"
+                                            },
+                                            {
+                                                "name": "ID_pc[29]"
+                                            },
+                                            {
+                                                "name": "ID_pc[28]"
+                                            },
+                                            {
+                                                "name": "ID_pc[27]"
+                                            },
+                                            {
+                                                "name": "ID_pc[26]"
+                                            },
+                                            {
+                                                "name": "ID_pc[25]"
+                                            },
+                                            {
+                                                "name": "ID_pc[24]"
+                                            },
+                                            {
+                                                "name": "ID_pc[23]"
+                                            },
+                                            {
+                                                "name": "ID_pc[22]"
+                                            },
+                                            {
+                                                "name": "ID_pc[21]"
+                                            },
+                                            {
+                                                "name": "ID_pc[20]"
+                                            },
+                                            {
+                                                "name": "ID_pc[19]"
+                                            },
+                                            {
+                                                "name": "ID_pc[18]"
+                                            },
+                                            {
+                                                "name": "ID_pc[17]"
+                                            },
+                                            {
+                                                "name": "ID_pc[16]"
+                                            },
+                                            {
+                                                "name": "ID_pc[15]"
+                                            },
+                                            {
+                                                "name": "ID_pc[14]"
+                                            },
+                                            {
+                                                "name": "ID_pc[13]"
+                                            },
+                                            {
+                                                "name": "ID_pc[12]"
+                                            },
+                                            {
+                                                "name": "ID_pc[11]"
+                                            },
+                                            {
+                                                "name": "ID_pc[10]"
+                                            },
+                                            {
+                                                "name": "ID_pc[9]"
+                                            },
+                                            {
+                                                "name": "ID_pc[8]"
+                                            },
+                                            {
+                                                "name": "ID_pc[7]"
+                                            },
+                                            {
+                                                "name": "ID_pc[6]"
+                                            },
+                                            {
+                                                "name": "ID_pc[5]"
+                                            },
+                                            {
+                                                "name": "ID_pc[4]"
+                                            },
+                                            {
+                                                "name": "ID_pc[3]"
+                                            },
+                                            {
+                                                "name": "ID_pc[2]"
+                                            },
+                                            {
+                                                "name": "ID_pc[1]"
+                                            },
+                                            {
+                                                "name": "ID_pc[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "EXE_pc",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "EXE_pc[31]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[30]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[29]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[28]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[27]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[26]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[25]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[24]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[23]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[22]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[21]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[20]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[19]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[18]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[17]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[16]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[15]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[14]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[13]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[12]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[11]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[10]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[9]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[8]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[7]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[6]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[5]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[4]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[3]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[2]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[1]"
+                                            },
+                                            {
+                                                "name": "EXE_pc[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 4,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "MEM_pc",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "MEM_pc[31]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[30]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[29]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[28]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[27]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[26]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[25]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[24]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[23]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[22]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[21]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[20]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[19]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[18]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[17]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[16]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[15]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[14]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[13]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[12]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[11]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[10]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[9]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[8]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[7]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[6]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[5]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[4]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[3]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[2]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[1]"
+                                            },
+                                            {
+                                                "name": "MEM_pc[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 5,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "WB_pc",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "WB_pc[31]"
+                                            },
+                                            {
+                                                "name": "WB_pc[30]"
+                                            },
+                                            {
+                                                "name": "WB_pc[29]"
+                                            },
+                                            {
+                                                "name": "WB_pc[28]"
+                                            },
+                                            {
+                                                "name": "WB_pc[27]"
+                                            },
+                                            {
+                                                "name": "WB_pc[26]"
+                                            },
+                                            {
+                                                "name": "WB_pc[25]"
+                                            },
+                                            {
+                                                "name": "WB_pc[24]"
+                                            },
+                                            {
+                                                "name": "WB_pc[23]"
+                                            },
+                                            {
+                                                "name": "WB_pc[22]"
+                                            },
+                                            {
+                                                "name": "WB_pc[21]"
+                                            },
+                                            {
+                                                "name": "WB_pc[20]"
+                                            },
+                                            {
+                                                "name": "WB_pc[19]"
+                                            },
+                                            {
+                                                "name": "WB_pc[18]"
+                                            },
+                                            {
+                                                "name": "WB_pc[17]"
+                                            },
+                                            {
+                                                "name": "WB_pc[16]"
+                                            },
+                                            {
+                                                "name": "WB_pc[15]"
+                                            },
+                                            {
+                                                "name": "WB_pc[14]"
+                                            },
+                                            {
+                                                "name": "WB_pc[13]"
+                                            },
+                                            {
+                                                "name": "WB_pc[12]"
+                                            },
+                                            {
+                                                "name": "WB_pc[11]"
+                                            },
+                                            {
+                                                "name": "WB_pc[10]"
+                                            },
+                                            {
+                                                "name": "WB_pc[9]"
+                                            },
+                                            {
+                                                "name": "WB_pc[8]"
+                                            },
+                                            {
+                                                "name": "WB_pc[7]"
+                                            },
+                                            {
+                                                "name": "WB_pc[6]"
+                                            },
+                                            {
+                                                "name": "WB_pc[5]"
+                                            },
+                                            {
+                                                "name": "WB_pc[4]"
+                                            },
+                                            {
+                                                "name": "WB_pc[3]"
+                                            },
+                                            {
+                                                "name": "WB_pc[2]"
+                                            },
+                                            {
+                                                "name": "WB_pc[1]"
+                                            },
+                                            {
+                                                "name": "WB_pc[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 6,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "ID_instruction",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "ID_instruction[31]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[30]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[29]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[28]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[27]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[26]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[25]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[24]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[23]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[22]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[21]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[20]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[19]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[18]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[17]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[16]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[15]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[14]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[13]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[12]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[11]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[10]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[9]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[8]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[7]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[6]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[5]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[4]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[3]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[2]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[1]"
+                                            },
+                                            {
+                                                "name": "ID_instruction[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

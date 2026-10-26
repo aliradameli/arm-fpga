@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ARM.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" \
+"../../../../ARM.srcs/sources_1/new/ARM.v" \
+"../../../../ARM.srcs/sources_1/new/EXE_Stage.v" \
+"../../../../ARM.srcs/sources_1/new/ID_Stage.v" \
+"../../../../ARM.srcs/sources_1/new/IF_Stage.v" \
+"../../../../ARM.srcs/sources_1/new/MEM_Stage.v" \
+"../../../../ARM.srcs/sources_1/new/WB_Stage.v" \
+"../../../../ARM.srcs/sources_1/new/ARM_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
